@@ -1,0 +1,23 @@
+{
+  "name": "angui",
+  "homepage": "https://github.com/gulci-poz/angui",
+  "authors": [
+    "gulci-poz <sebastian.gulczynski.poznan@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
