@@ -3,7 +3,7 @@
 /*
 npm install -g bower
 
-bower install angular
+bower install --save angular
 
 musimy mieć zainstalowany git
 bower instaluje w bieżącej ścieżce w folderze bower_components
@@ -11,7 +11,7 @@ jeśli chcemy instalować pakiety gdzie indziej, musimy to wyszczególnić w pli
 {
     "directory": "src/bower_components"
 }
-dodaję bower_components w do .gitignore
+dodaję bower_components do .gitignore
 
 bower init
 
