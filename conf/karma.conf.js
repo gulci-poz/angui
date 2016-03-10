@@ -6,7 +6,7 @@ module.exports = function (config) {
         files: [
             "src/bower_components/angular/angular.min.js",
             "src/bower_components/angular-mocks/angular-mocks.js",
-            "src/js/**/.js",
+            "src/js/**/*.js",
             "test/unit/**/*.js"
         ],
         autoWatch: true,
