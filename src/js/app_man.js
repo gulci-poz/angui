@@ -85,4 +85,44 @@ npm install karma-firefox-launcher --save
 
 // po przygotowaniu pliku Gruntfile.js
 // (musimy mieć uruchomione webdriver-manager oraz http-server; można to również skonfigurować w grunt)
+// (można też dodać czyszczenie folderu buildowanego projektu)
 // grunt dist
+
+// git branch additional-feature
+// git checkout additional-feature
+
+// przed zmianą gałęzi koniecznie commit
+
+// git checkout master
+// git merge additional feature
+
+// można wprowadzić drobne zmiany w głównej gałęzi i potem wkomponować je w poboczną gałąź (może być konieczne ręczne rozwiązanie konfliktów)
+// git merge master
+
+// używamy angularui, sami budujemy projekt
+// chcemy korzystać z modułu ui-utils - jest deprecated, ostatni update - 21.07.2015
+// jest to kolekcja modułów - są one dostępne oddzielnie w projekcie angularui
+// git clone https://github.com/angular-ui/ui-utils
+// instalujemy zależności npm install (nic nie ma, nie ma package.json) i bower install
+
+// zmiana: instaluję zależności bowera w moim projekcie
+// bower install --save angular-ui-scroll
+// bower install --save angular-ui-scrollpoint
+// bower install --save angular-ui-event
+// bower install --save angular-ui-mask
+// bower install --save angular-ui-validate
+// bower install --save angular-ui-indeterminate
+// bower install --save angular-ui-uploader
+// w Gruntfile.js nie używam * dla wszystkich plików, ale wymieniam je w kolejności ładowania w przeglądarce; będą one łączone w jeden plik, ważna jest kolejność kodu
+// muszę też podać pliki w konfiguracji karmy i w index.html
+// w app.js trzeba wpisać moduły, które zawierają dyrektywy i serwisy
+// w angular-ui-uploader nie ma dyrektyw, jest serwis uiUploader
+
+// karma start --browsers=Chrome test/karma.conf.js --single-run=true
+// lub od razu: grunt
+// testy są częścią głównego zadania w Gruntfile.js
+// grunt build
+// nie ma konfiguracji karmy ani grunta
+// możemy się bawić w budowanie każdego modułu z osobna
+
+// DRY - Don't Repeat Yourself

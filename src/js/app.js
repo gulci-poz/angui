@@ -1,3 +1,3 @@
 "use strict";
 
-angular.module("myApp", ["myApp.controllers", "myApp.directives"]);
+angular.module("myApp", ["ui.event", "ui.indeterminate", "ui.mask", "ui.scroll", "ui.scrollpoint", "ui.uploader", "ui.validate", "myApp.controllers", "myApp.directives"]);

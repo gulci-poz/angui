@@ -10,6 +10,13 @@ module.exports = function (grunt) {
                 dist: {
                     src: [
                         "src/bower_components/angular/angular.min.js",
+                        "src/bower_components/angular-ui-event/dist/event.min.js",
+                        "src/bower_components/angular-ui-indeterminate/dist/indeterminate.min.js",
+                        "src/bower_components/angular-ui-mask/dist/mask.min.js",
+                        "src/bower_components/angular-ui-scroll/dist/ui-scroll.min.js",
+                        "src/bower_components/angular-ui-scrollpoint/dist/scrollpoint.min.js",
+                        "src/bower_components/angular-ui-uploader/dist/uploader.min.js",
+                        "src/bower_components/angular-ui-validate/dist/validate.min.js",
                         "src/js/app.js",
                         "src/js/controllers.js",
                         "src/js/directives.js"
