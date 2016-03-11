@@ -10,16 +10,16 @@ describe("directive specs", function () {
 
     beforeEach(inject(function ($rootScope) {
         $scope = $rootScope.$new();
-        $scope.name = {
-            firstname: "John",
-            lastname: "Doe"
+        $scope.person = {
+            firstName: "John",
+            lastName: "Doe"
         };
     }));
 
     describe("hello-world", function () {
         it("should contain the provided name", function () {
             inject(function ($compile) {
-                var element = $compile('<div hello-world hello-name="name"></div>')($scope);
+                var element = $compile('<div hello-world hello-name="person"></div>')($scope);
                 $scope.$digest();
                 expect(element.html()).toContain("John");
             });

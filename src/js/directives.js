@@ -10,7 +10,7 @@ angular.module("myApp.directives", [])
             //templateUrl: "directives/helloWorld.html",
 
             // na potrzeby testu dyrektywy na tym etapie, korzystam z template zamiast osobnego pliku HTML i templateUrl
-            template : '<h1>Hello {{ helloName.firstname }} {{helloName.lastname }}!</h1>Firstname: <input type="text" data-ng-model="helloName.firstname" /><br />Lastname: <input type="text" data-ng-model="helloName.lastname" />',
+            template : '<h1>Hello {{ helloName.firstName }} {{helloName.lastName }}!</h1>Firstname: <input type="text" data-ng-model="helloName.firstName" /><br />LastName: <input type="text" data-ng-model="helloName.lastName" />',
 
             // można też explicite "=helloName", przydatne jeśli posługujemy się inną nazwą obiektu, np. helloNameSpecial: "=helloName"
             scope: {

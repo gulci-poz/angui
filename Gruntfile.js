@@ -26,8 +26,20 @@ module.exports = function (grunt) {
             },
             copy: {
                 main: {
-                    src: "src/css/main.css",
-                    dest: "dist/css/main.css"
+                    files: [
+                        {
+                            src: "src/bower_components/bootstrap/dist/css/bootstrap.min.css",
+                            dest: "dist/css/bootstrap.min.css"
+                        },
+                        {
+                            expand: true,
+                            cwd: "src/css/",
+                            src: [
+                                "**"
+                            ],
+                            dest: "dist/css/"
+                        }
+                    ]
                 }
             },
             targethtml: {
