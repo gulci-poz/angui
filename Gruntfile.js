@@ -17,6 +17,7 @@ module.exports = function (grunt) {
                         "src/bower_components/angular-ui-scrollpoint/dist/scrollpoint.min.js",
                         "src/bower_components/angular-ui-uploader/dist/uploader.min.js",
                         "src/bower_components/angular-ui-validate/dist/validate.min.js",
+                        "node_modules/angular-ui-utils/modules/keypress/keypress.js",
                         "src/js/app.js",
                         "src/js/controllers.js",
                         "src/js/directives.js"

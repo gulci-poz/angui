@@ -15,6 +15,7 @@ module.exports = function (config) {
             "src/bower_components/angular-ui-validate/dist/validate.min.js",
 
             "src/bower_components/angular-mocks/angular-mocks.js",
+            "node_modules/angular-ui-utils/modules/keypress/keypress.js",
             "src/js/**/*.js",
             "test/unit/**/*.js"
         ],

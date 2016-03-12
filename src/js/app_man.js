@@ -126,3 +126,7 @@ npm install karma-firefox-launcher --save
 // możemy się bawić w budowanie każdego modułu z osobna
 
 // DRY - Don't Repeat Yourself
+
+// npm install --save angular-ui-utils
+// potrzebujemy modułu ui.keypress (app.js, index.html)
+// uzupełniamy konfigurację karmy i grunta

@@ -24,6 +24,7 @@
         <script src="bower_components/angular-ui-scrollpoint/dist/scrollpoint.min.js"></script>
         <script src="bower_components/angular-ui-uploader/dist/uploader.min.js"></script>
         <script src="bower_components/angular-ui-validate/dist/validate.min.js"></script>
+        <script src="../node_modules/angular-ui-utils/modules/keypress/keypress.js"></script>
         <!--<!(endif)-->
     </head>
 
@@ -36,21 +37,26 @@
 
             <div class="row spacer-sm">
                 <label class="col-xs-5 text-right" for="fname">First Name</label>
-                <input class="col-xs-7" type="text" id="fname" ng-model="person.firstName">
+                <input class="col-xs-7" type="text" id="fname" data-label="first name" ng-model="person.firstName" ui-event="{focus: 'focusCallback()', blur: 'blurCallback()'}" ui-keydown="{'113': 'helpKeyDown($event)'}">
             </div>
 
             <div class="row spacer-sm">
                 <label class="col-xs-5 text-right" for="lname">Last Name</label>
-                <input class="col-xs-7" type="text" id="lname" ng-model="person.lastName">
+                <input class="col-xs-7" type="text" id="lname" data-label="last name" ng-model="person.lastName" ui-event="{focus: 'focusCallback()', blur: 'blurCallback()'}" ui-keydown="{'113': 'helpKeyDown($event)'}">
             </div>
 
             <div class="row spacer-sm">
                 <label class="col-xs-5 text-right" for="phone">Phone</label>
-                <input class="col-xs-7" type="tel" id="phone" ui-mask="{{ mask }}" ng-model="person.phone">
+                <input class="col-xs-7" type="tel" id="phone" data-label="phone number" ui-mask="{{ mask }}" ng-model="person.phone" ui-event="{focus: 'focusCallback()', blur: 'blurCallback()'}" ui-keydown="{'113': 'helpKeyDown($event)'}">
+            </div>
+
+            <div class="row spacer-lg" ng-show="helpText">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">{{ helpText }}</div>
             </div>
 
             <div class="row spacer-lg">
-                <pre class="col-xs-12"><code>{{ getModel() }}</code></pre>
+                <pre class="col-xs-12" ng-style="modelStatus()"><code>{{ getModel() }}</code></pre>
             </div>
         </div>
 
